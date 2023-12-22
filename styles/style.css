@@ -1,0 +1,99 @@
+body {
+    background-color: gray;
+}
+p, h1, h2 {
+    text-align: center;
+}
+p {
+    font-size: 18px;
+}
+h1 {
+    font-size: 34px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+table {
+    margin: auto;
+}
+
+th {
+    font-size: 26px;
+    width: 20%;
+    text-align: center;
+}
+
+td {
+    font-size: 26px;
+    text-align: center;
+    size: auto;
+}
+
+/* .new-section-cells {
+    font-size:16px;
+} */
+.new-section-input {
+    margin: auto;
+    display: block;
+    width: auto;
+    font-size: 14px;
+}
+
+/* #new-section-name {
+    
+} */
+.edit-remove-button {
+    /* position: relative; */
+    margin: auto;
+    display: block;
+    width: auto;
+    font-size: 16px;
+    background-color: white;
+}
+
+.edit-button,
+.remove-button,
+#add-button,
+#update-button {
+    /* position: relative; */
+    margin: auto;
+    display: block;
+    width: auto;
+    font-size: 16px;
+    background-color: white;
+}
+
+/* label {
+    margin:auto;
+    display:block;
+} */
+.final-grade-block {
+    /* margin:auto;
+    display:block; */
+    margin: 20px;
+    text-align: center;
+}
+
+.final-grade {
+    font-size: 30px;
+}
+
+#calculate-button {
+    margin: auto;
+    display: block;
+    width: auto;
+    font-size: 30px;
+    background-color: white;
+}
+
+/* input[type="text"] {
+    size: 5;
+} */

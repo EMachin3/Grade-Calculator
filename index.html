@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Calculate what grade you need to get a desired final grade.">
+    <meta name="author" content="EMachin3">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body id="body">
+    <h1>Required Grade Calculator</h1>
+    <p>Make sure the percentage weights add up to 100 and there is exactly one row with an empty grade.<br>The calculator will find what grade you need in this section to achieve the desired final grade.</p>
+    <table>
+        <tr>
+            <th>Section Name</th>
+            <th>Percentage Weight (%)</th>
+            <th>Current Grade</th>
+            <th>Edit</th>
+            <th>Remove</th>
+        </tr>
+        <tr>
+            <td>Test 1</td>
+            <td>20%</td>
+            <td>93</td>
+            <td><button class="edit-button">Edit</button></td>
+            <td><button class="remove-button">Remove</button></td>
+        </tr>
+        <tr>
+            <td>Test 2</td>
+            <td>20%</td>
+            <td>100</A></td>
+            <td><button class="edit-button">Edit</button></td>
+            <td><button class="remove-button">Remove</button></td>
+        </tr>
+        <tr>
+            <td>Test 3</td>
+            <td>20%</td>
+            <td>91</td>
+            <td><button class="edit-button">Edit</button></td>
+            <td><button class="remove-button">Remove</button></td>
+        </tr>
+        <tr>
+            <td>Homework</td>
+            <td>20%</td>
+            <td>99</td>
+            <td><button class="edit-button">Edit</button></td>
+            <td><button class="remove-button">Remove</button></td>
+        </tr>
+    </table>
+    <h2>Add New Section</h2>
+    <table>
+        <tr>
+            <th>Section Name</th>
+            <th>Percentage Weight (%)</th>
+            <th>Current Grade</th>
+            <th>Add</th>
+        </tr>
+        <tr id="new-section-input-row">
+            <td class="new-section-cells"><input class="new-section-input" id="section-name-input" size="27"></td>
+            <td class="new-section-cells"><input class="new-section-input" id="percentage-weight-input" size="2"></td>
+            <td class="new-section-cells"><input class="new-section-input" id="current-grade-input" size="2"></td>
+            <td class="new-section-cells"><button class="add-button" id="add-button">Add</button></td>
+        </tr>
+    </table>
+    <div class="final-grade-block">
+        <label for= "desired-final-grade" class="final-grade">Desired final grade:</label>
+        <input name= "desired-final-grade" class="final-grade" id="final-grade-input" value="" size="2"><br>
+    </div>
+    <button id="calculate-button">Calculate Required Grade</button>
+    <!-- Credit for "BigNumber" class: https://github.com/MikeMcl/bignumber.js/ 
+         Used under MIT License-->
+    <script src="scripts/bignumber.js"></script>
+    <script src="scripts/grade.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
